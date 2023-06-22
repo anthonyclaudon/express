@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#game-board {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border: 1px solid #000;
+}
+
+.snake-part {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+}
+
+#food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
